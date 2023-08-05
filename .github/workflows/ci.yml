@@ -1,0 +1,48 @@
+# SPDX-FileCopyrightText: 2022 Comcast Cable Communications Management, LLC
+# SPDX-License-Identifier: Apache-2.0
+---
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - README.md
+      - CONTRIBUTING.md
+      - MAINTAINERS.md
+      - LICENSE
+      - NOTICE
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  basicListener:
+    uses: xmidt-org/shared-go/.github/workflows/ci.yml@d0737af7255c581ce3cc09b69b96ba16a5913b4e # v4.0.0
+    with:
+      lint-skip:            true
+      release-skip-publish: --skip-publish
+      release-type:         program
+      release-main-package: basicListener
+      working-directory:    basicListener
+    secrets: inherit
+  configurableListener:
+    uses: xmidt-org/shared-go/.github/workflows/ci.yml@d0737af7255c581ce3cc09b69b96ba16a5913b4e # v4.0.0
+    with:
+      lint-skip:            true
+      release-skip-publish: --skip-publish
+      release-type:         program
+      release-main-package: configurableListener
+      working-directory:    configurableListener
+    secrets: inherit
+  timedListener:
+    uses: xmidt-org/shared-go/.github/workflows/ci.yml@d0737af7255c581ce3cc09b69b96ba16a5913b4e # v4.0.0
+    with:
+      lint-skip:            true
+      release-skip-publish: --skip-publish
+      release-type:         program
+      release-main-package: timedListener
+      working-directory:    timedListener
+    secrets: inherit

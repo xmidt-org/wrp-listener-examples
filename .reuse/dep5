@@ -1,0 +1,32 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: wrp-listener-examples
+Upstream-Contact: Weston Schmidt <weston_scmidt@alumni.purdue.edu>
+Source: https://github.com/xmidt-org/wrp-listener-examples
+
+Files: .gitignore
+Copyright: SPDX-FileCopyrightText: 2023 Comcast Cable Communications Management, LLC
+License: Apache-2.0
+
+Files: .golangci.yaml
+Copyright: SPDX-FileCopyrightText: 2023 Comcast Cable Communications Management, LLC
+License: Apache-2.0
+
+Files: */go.mod
+Copyright: SPDX-FileCopyrightText: 2023 Comcast Cable Communications Management, LLC
+License: Apache-2.0
+
+Files: */go.sum
+Copyright: SPDX-FileCopyrightText: 2023 Comcast Cable Communications Management, LLC
+License: Apache-2.0
+
+Files: *.md
+Copyright: SPDX-FileCopyrightText: 2023 Comcast Cable Communications Management, LLC
+License: Apache-2.0
+
+Files: NOTICE
+Copyright: SPDX-FileCopyrightText: 2023 Comcast Cable Communications Management, LLC
+License: Apache-2.0
+
+Files: .whitesource
+Copyright: SPDX-FileCopyrightText: 2023 Comcast Cable Communications Management, LLC
+License: Apache-2.0
