@@ -20,7 +20,7 @@ on:
 
 jobs:
   basicListener:
-    uses: xmidt-org/shared-go/.github/workflows/ci.yml@5b512e790b0486d5e09c2f553175835afd509c4f # v4.13.22
+    uses: xmidt-org/shared-go/.github/workflows/ci.yml@3e68bd27b94a162e0fb03cc387028a4d248834fb # v4.13.23
     with:
       lint-skip:            true
       release-skip-publish: --skip-publish
@@ -29,7 +29,7 @@ jobs:
       working-directory:    basicListener
     secrets: inherit
   configurableListener:
-    uses: xmidt-org/shared-go/.github/workflows/ci.yml@5b512e790b0486d5e09c2f553175835afd509c4f # v4.13.22
+    uses: xmidt-org/shared-go/.github/workflows/ci.yml@3e68bd27b94a162e0fb03cc387028a4d248834fb # v4.13.23
     with:
       lint-skip:            true
       release-skip-publish: --skip-publish
@@ -38,7 +38,7 @@ jobs:
       working-directory:    configurableListener
     secrets: inherit
   timedListener:
-    uses: xmidt-org/shared-go/.github/workflows/ci.yml@5b512e790b0486d5e09c2f553175835afd509c4f # v4.13.22
+    uses: xmidt-org/shared-go/.github/workflows/ci.yml@3e68bd27b94a162e0fb03cc387028a4d248834fb # v4.13.23
     with:
       lint-skip:            true
       release-skip-publish: --skip-publish
